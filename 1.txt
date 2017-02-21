@@ -1,0 +1,202 @@
+Ctrl+Shift+T
+Ctrl +D
+Ctrl+Alt+H（函数被调用的地方）
+全局 在层次结构中打开类型 Ctrl+Shift+H 
+全局 转至匹配的括号 Ctrl+Shift+P 
+全局 添加/去除断点 Ctrl+Shift+B 
+
+在当前行上插入一行：Ctrl+Shift+Enter	
+在当前行下插入一行： Shift+Enter
+上下移动选中的行：Alt+Up/Down
+拷贝选中的行：Ctrl+Alt+Up/Down 
+-----------------------------------
+6 重构 
+显示重构菜单：Alt+Shift+T
+重构-改变方法签名：Alt+Shift+C
+重构-移动：Alt+Shift+V
+重构-重命名：Alt+Shift+R 
+------70.4安装mysql------------------------
+----------------------------------
+含羞倚醉不成歌，纤手掩香罗。偎花映烛，偷传深意，酒思入横波。　 
+看朱成碧心迷乱，翻脉脉，敛双蛾。相见时稀隔别多。又春尽，奈愁何？　 
+
+--------------启动70.3的mysql----root，root密码------------
+service mysqld start
+--登录mysql并授权-----------
+mysql -u root -p
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'root' WITH GRANT OPTION;
+---------------------------------------------------------------
+----------vim命令--
+x        删除当前光标下的字符
+dw       删除光标之后的单词剩余部分。
+d$       删除光标之后的该行剩余部分。
+dd       删除当前行。
+-----------192.168.70.2；70.4密码----------
+sh0uJin@702
+----------------文件夹复制（A-B）-----------------------
+scp -r /usr/local/zookeeper-3.4.6  root@192.168.70.3:/usr/local/
+scp  root@192.168.1.240:/root/abc.zip  /abc/
+----------------------------------------
+一饭尚铭恩，况曾保抱提携，只少怀胎十月
+千金难报德，即论人情物理，也当泣血三年
+-------------------------
+sjdev:sjdev@123
+------------------
+sh0uJin@702
+192.168.70.4
+--------------------
+sh0uJin@123用户权限
+ssh sjw-hz-app-o01
+-Dmaven.test.skip=true
+-------------------------
+/etc/rc.d/init.d
+/server/scripts/pulish.sh（测试环境）
+/server/scripts/fbsrc.sh （开发环境）
+-------------------------
+---阿里云测试环境
+http://121.43.72.3:8086/
+223.203.128.4:15331/sjw1
+finser:finser2015X
+管理员JSB123456@@
+用户名：onlyread
+密码：OraclepwD123
+连接地址：223.203.128.4:15333
+-------mq自动---------------
+./activemq start
+./activemq stop
+mq日志查看
+/mnt/shoujin/smf/apache-activemq/data
+-------------------------------
+显示的时候，顺道输出行号：nl
+grep --help(命令名+help查看帮助)
+ls -l /proc/8269 端口号查询程序启动路径
+lsof -i:8280
+ps -ef | grep 30695
+------------------远程调试端口----------------------------
+SMFTrade9092；SMFManagement9094；SMFService9093；SMFWebApp9091；CnpayFileServer9095；CnpayJobManage9099；SmartSchedule-Service9097；CnpayCommunicationMouble9096；SMFCmbcBusiness9087
+-----------------------------------
+查看命令历史使用记录并通过less分页显示
+history | less
+-------------------------------------------
+more afile
+less afile
+grep 'DruidDataSource' catalina.out -A 10
+grep 'DruidDataSource' catalina.out -B 10
+grep 'DruidDataSource' catalina.out -C 10
+ps -ef |grep java |less
+------------------------------------------------------
+scp -r -P 8228 /home/maven-repos/com/cnpay/SMFWebApp/1.0/SMFWebApp-1.0.war sjw-hz-app-t01:/mnt/maven_repos
+-------------------------------------------------------
+svn log --limit 3 -v
+svn log Afile
+----------------------------
+http://1.202.226.243:18099/nexus/content/groups/public/
+https://1.202.226.243:10096/svn/sjwwd/sjpt/SMF/trunk
+--------------------------------------------
+chgtime 'date -s "+1 days"'
+chgtime 'date -s "2015-09-09 12:00:00"'
+/insjw
+--------------------------
+SMFWebApp项目是两台都要更新，其他的只更新第一台就好了
+第二台测试环境机器IP
+10.139.50.37
+端口默认，用户名root
+密码sh0uJin@2016
+第一台没变
+-------------------
+测试数据库地址
+root/sJw?<>1@3$Ps
+10.139.155.37
+----------------------
+开发环境外部映射地址
+1.202.226.243 15331 sjw1
+https://1.202.226.243:10096/svn/sjwwd/sjpt/SMF/
+---------------------------
+深圳环境：
+http://218.17.152.138:9086/login.do
+danbao001
+ss123456
+------------OA系统登录，用户名：高明杰---------------
+http://oa.shoujinwang.com/seeyon/main.do
+------------------------------------
+redis开发环境
+/usr/local/bin
+启动./redis-server /etc/redis.conf
+cd /etc/redis.conf
+检查是否启动成功 ps -ef | grep redis
+netstat -tunpl | grep 6379命令来查看6379端口使用情况
+-----------------------------
+redis-cli
+-------------------------------
+-Xms2048m -Xmx2048m -Xmn1024m -Xss512k -XX:PermSize=384m -XX:MaxPermSize=384m
+----------远程调试catalina.sh中添加-------------------------------------------------------------
+CATALINA_OPTS="-server -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=9091"
+
+------技术部网盘----------------------------
+账号：it@shoujinwang.com
+密码：Jishubu@123 
+---------------------------------------
+前台地址：http://182.92.170.141:8080/yhxd/web.shtml
+后台地址：http://182.92.170.141:8080/yhxd/login.shtml
+后台管理员账号：18200000000 密码：111111
+
+Bugfree访问地址：
+内网地址： http://192.168.50.5:8946
+外网地址： http://1.202.226.243:8946
+----------------------------------------------
+svn zhaglj zhanglj123
+----------------------------------------------------
+生产/测试服务器回收root权限
+各位大神：
+以后禁止使用root用户登录线上和测试服务器
+如需登录使用用户sjdev
+用户名：sjdev
+密码：sjdev@123
+连接端口和地址不变
+------------------------------------
+SMFWebApp项目是两台都要更新，其他的只更新第一台就好了
+第二台测试环境机器IP
+10.139.50.37
+李少鹏<lspgyy@163.com> 2016/5/12 14:01:31
+端口默认，用户名root
+密码sh0uJin@2016
+第一台没变
+------------------------------------
+121.43.72.3
+8228
+root
+sh0uJin@123
+sh0uJin@2016
+------------------------------
+先清除数据库表及结构索引、序列、视图、等
+IMP  finser/finser2015X@192.168.70.3/sjw    BUFFER=64000 FILE=E:\finser_20160505.dmp FROMUSER=finser TOUSER=finser log=d:\finserlog604.log
+------------------------------------
+SELECT * FROM syst_send_log a WHERE a.tos='15011558816' ORDER BY a.create_time DESC;
+
+--登录用户、实时短信内容
+select * from Syst_Logon_User;
+--资源映射表 
+select * from SYST_LOGON_RESOURCE r
+
+SYST_ADMIN_USER
+
+select * from SYST_LOGON_ROLE r;
+select * from BUSI_BASE_DEPT d;
+select * from CUST_CUSTOMER_INFO c;
+select * from CUST_COMPANY_INFO c;
+select * from CUST_PERSONAL_INFO p;
+select * from SYST_LOGON_USER u;
+select * from CUST_AGENTINFO_INFO a;
+select * from CUST_HEADER_INFO h;
+select * from CUST_LEGAL_INFO l;
+
+SYST_RECORD_LOG
+VIEW_LOANDAYS_RATIO
+VIEW_PRODTYPE_RATIO
+VIEW_PLAT_RISKMSG
+VIEW_MON_TRADE_IN
+VIEW_MON_TRADE_OUT
+
+FRON_LOAN_INFO A,
+FRON_LOAN_APPLICATION B 
+Clea_Repay_Detail_Info
